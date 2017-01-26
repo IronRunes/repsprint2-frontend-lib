@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>K-Monitor</title>
+    <!-- get fontawesome -->
+    <script src="https://use.fontawesome.com/ff50c4964e.js"></script>
+    <!-- Main Styles -->
+    <link href="/dist/css/main.css" rel="stylesheet">
+    <!-- plugins -->
+    <link href="/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="form">
+
+    <div class="container-fluid">
+      <div class="row">
+        <section class="col-md-6"><h1>PDF HERE</h1></section>
+        <section class="col-md-6">
+          <form class="form-horizontal" method="" action="">
+            <ul id="slide-list">
+              <li>
+<!-- SLIDE 1 -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1>Personal Information</h1>
+                    <div class="form-group">
+                      <div class="col-md-4">
+                        <label for="spouse">Spouse:</label>
+                      </div>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" name="spouse" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-4">
+                        <label for="child">Child:</label>
+                      </div>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" name="child[]" class="form-control">
+                      </div>
+                    </div>
+                    <button class="btn btn-default repeater pull-right"><i class="fa fa-plus"></i> Add Field...</button>
+
+                </div>
+              </li>
+              <li>
+<!-- SLIDE 2 -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1>Any Properties declared?</h1>
+                    <div class="radio">
+                      <label for="radio1-1">
+                        <input type="radio" id="radio1-1" name="radio1" value="yes" class="box-toggler" data-toggle-target=".contents-1"> Yes
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label for="radio1-2">
+                        <input type="radio" id="radio1-2" name="radio1" value="no"  class="box-toggler" data-toggle-target=".contents-1"> No
+                      </label>
+                    </div>
+                    <div class="hidden contents-1" id="">
+                        <div class="row">
+                          <h2>Main information</h2>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label for="location">Location:</label>
+                          </div>
+                          <div class="col-md-8">
+                            <input class="form-control" type="text" name="location[]" class="form-control">
+                          </div>
+
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label for="area">Area:</label>
+                          </div>
+                          <div class="col-md-4">
+                            <input class="form-control" type="text" name="area[]" class="form-control">
+                          </div>
+                          <div class="col-md-4">
+                            <select class=" form-control" name="unit[]" title="unit">
+                                <option></option>
+                                <option value="sq">Square meters</option>
+                                <option value="ha">Hectares</option>
+                                <option value="ac">Acres</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                              <label for="area">Cultivation:</label>
+                            </div>
+                            <div class="col-md-4">
+                              <input class="form-control" type="text" name="cultivation[]" class="form-control">
+                            </div>
+                          <div class="col-md-4">
+                            <div class="checkbox">
+                              <label>
+                                 <input type="checkbox" name="cultivation-option-1[]"> Peppers
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                 <input type="checkbox" name="cultivation-option-2[]"> Peppers
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                 <input type="checkbox" name="cultivation-option-3[]"> Peppers
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                 <input type="checkbox" name="cultivation-option-4[]"> Peppers
+                              </label>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-4">
+                                <label>Other:</label>
+                              </div>
+                              <div class="col-md-8">
+                                 <input type="text" name="cultivation-other[]" class="form-control">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                        <div class="row">
+                          <h2>Building Info</h2>
+                          <div class="col-md-4">
+                            <h3>Nature of use</h3>
+                            <div class="checkbox">
+                              <label>
+                                 <input type="checkbox" name="building-option-1[]"> Homes
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                 <input type="checkbox" name="building-option-2[]"> Industrial
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                 <input type="checkbox" name="building-option-3[]"> Offices
+                              </label>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-4">
+                                <label>Other:</label>
+                              </div>
+                              <div class="col-md-8">
+                                 <input type="text" name="building-other[]" class="form-control">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-8">
+                            <label>Area:</label>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <input type="text" class="form-control" name="building-area[]">
+                              </div>
+                              <div class="col-md-6">
+                                <select class=" form-control" name="unit[]" title="unit">
+                                    <option></option>
+                                    <option value="sq">Square meters</option>
+                                    <option value="ha">Hectares</option>
+                                    <option value="ac">Acres</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h2>Legal Designation</h2>
+                            <div class="checkbox">
+                              <label>
+                                 <input type="checkbox" name="legal-option-1[]"> Homes
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                 <input type="checkbox" name="legal-option-2[]"> Industrial
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                 <input type="checkbox" name="legal-option-3[]"> Offices
+                              </label>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-4">
+                                <label>Other:</label>
+                              </div>
+                              <div class="col-md-8">
+                                 <input type="text" name="legal-status-other[]" class="form-control">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <h2>Legal Status</h2>
+                            <div class="checkbox">
+                              <label>
+                                 <input type="checkbox" name="legal-status-option-1[]"> Homes
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                 <input type="checkbox" name="legal-status-option-2[]"> Industrial
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                 <input type="checkbox" name="legal-status-option-3[]"> Offices
+                              </label>
+                            </div>
+                            <div class="form-group">
+                              <div class="col-md-4">
+                                <label>Other:</label>
+                              </div>
+                              <div class="col-md-8">
+                                 <input type="text" name="legal-status-other[]" class="form-control">
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h2>Ownership Ratio</h2>
+                          </div>
+                          <div class="col-md-2">
+                            <input class="form-control" type="text">
+                          </div>
+                          <div class="col-md-2"><span class="out-of center-block">/</span></div>
+                          <div class="col-md-2">
+                            <input class="form-control" type="text">
+                          </div>
+                          <div class="col-md-2"><span class="or center-block">OR</span></div>
+                          <div class="col-md-4">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="percentage..." aria-describedby="percent-addon">
+                              <span class="input-group-addon" id="percent-addon">%</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h2>Acquisition Info</h2>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-3">
+                              <select id="select1" class=" form-control" name="acquisition[]" data-live-search="true" title="Enter value">
+                                <option value="1">Fast Cars</option>
+                                <option value="2">Danger</option>
+                                <option value="3">Fire</option>
+                                <option value="4">Knives</option>
+                                <option value="other">Other...</option>
+                              </select>
+                              <input type="text" name="acquisition-other[]" id="select1-other" class="hidden form-control other-input" placeholder="Enter value for the selection here">
+                            </div>
+
+                            <div class="col-md-3">
+                              <input class="form-control" name="acquisition-year[]" type="number" placeholder="year" maxlength="4" min="1800" max="2017">
+                            </div>
+                            <div class="col-md-3">
+                              <select class="form-control "  name="acquisition-month[]" placeholder="month" title="month" data-live-search="true">
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                              </select>
+                            </div>
+                            <div class="col-md-3">
+                              <input class="form-control"  name="acquisition-day[]" type="number" placeholder="day" maxlength="2" min="1" max="31">
+                            </div>
+
+                          </div>
+
+                          <button class="btn btn-default repeater"><i class="fa fa-plus"></i> Add another entry...</button>
+
+                        </div>
+
+                        <div class="row property-type">
+                          <div class="col-md-12">
+                            <h2>Type of property</h2>
+                          </div>
+
+                          <div class="col-md-4">
+                            <div class="radio">
+                              <i class="fa fa-5x fa-home"></i><br />
+                              <input type="radio" name="property-type[]">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="radio">
+                              <i class="fa fa-5x fa-map-o"></i><br />
+                              <input type="radio" name="property-type[]">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="radio">
+                              <label class="center-block text-center">
+                                <i class="fa fa-5x fa-asterisk"></i><br />
+                                <input type="radio" name="property-type[]">
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn btn-lg btn-default repeater"><i class="fa fa-plus"></i> Add another location</button>
+                    <!-- eof hidden contents box -->
+                    </div>
+                </div>
+              </li>
+            </ul>
+
+          </form>
+        </section>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/dist/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/dist/js/bootstrap.min.js"></script>
+    <script src="/dist/js/bootstrap-select.min.js"></script>
+    <script src="/dist/js/script.min.js"></script>
+  </body>
+</html>

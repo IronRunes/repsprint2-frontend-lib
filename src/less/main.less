@@ -1,0 +1,24 @@
+/** main less libs/files to import and be happy **/
+
+/** external libs/frameworks/even plugins**/
+@import 'src/components/bootstrap/less/bootstrap.less';
+
+/** custom css rulesets **/
+@import 'src/less/variables.less';    //variables (mainly colors)
+@import 'src/less/mixins.less';       //mixins to make your life easier
+@import 'src/less/core.less';         //shared assets and stuff
+@import 'src/less/start.less';         //start page
+@import 'src/less/components.less';   //components (pieces of the form slider)
+
+/** generic settings for titles and body copy **/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', Arial, sans-serif; font-weight: regular;
+}
+body {
+  font-family: 'Open Sans', Arial, sans-serif; font-weight: regular; 
+}
+
+/** homepage only **/
+body#homepage .row {
+  margin-bottom: 25px;
+}
